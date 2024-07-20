@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Add to cart functionality</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Add to cart functionality</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Add to cart functionality</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m7.44s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">83%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Create a new user account"></a>
+<h3 class="failures">Create a new user account</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Expected alert message: Sign up successful. but got: This user already exist.
+	at co.com.pragma.certification.utest.questions.VerifyAlert.performAs(VerifyAlert.java:39)
+	at co.com.pragma.certification.utest.questions.VerifyAlert$ByteBuddy$lL9qcgc7.performAs$accessor$QFT3xDjl(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at co.com.pragma.certification.utest.questions.VerifyAlert$ByteBuddy$lL9qcgc7.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at co.com.pragma.certification.utest.stepdefinitions.UtestStepDefinitions.iShouldSeeAConfirmationMessage(UtestStepDefinitions.java:82)
+	at ✽.should see a confirmation message &quot;Sign up successful.&quot;(src/test/resources/features/utest.feature:21)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Add a monitor to the cart</td>
+<td class="success">17.952s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Add a single product to the cart</td>
+<td class="success">11.499s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">Create a new user account</td>
+<td class="failures">9.425s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">Fill out the contact form and handle alert</td>
+<td class="success">9.135s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">User Log out</td>
+<td class="success">10.145s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">User login</td>
+<td class="success">9.286s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Open Browser
+Clicked on the product link: Samsung galaxy s6
+
+Clicked on the 'Add to cart' button
+Alert accepted
+Open Browser
+Alert text: [This user already exist.]
+Open Browser
+Open Browser
+Cierra Sesion
+Open Browser
+Formulario enviado
+Open Browser
+Clicked on the product link: Apple monitor 24
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Starting ChromeDriver 125.0.6422.78 (14db42ec38aded3304a3e624a0a038e02956b87e-refs/branch-heads/6422@{#1088}) on port 45097
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1721510971.327][WARNING]: This version of ChromeDriver has not been tested with Chrome version 126.
+jul. 20, 2024 4:29:31 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5e4fb7e8
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7a845446
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@38cec614
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@65ba86cf
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6688cc45
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@68c51d4c
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4558c2f0
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@646cea45
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@43740ff8
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1d3aadfb
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]], Then go to home page [Juan go to home [Juan clicks on home button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]], Then go to home page [Juan go to home [Juan clicks on home button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]], Then go to home page [Juan go to home [Juan clicks on home button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]], Then go to home page [Juan go to home [Juan clicks on home button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]], Then go to home page [Juan go to home [Juan clicks on home button]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]], Then go to home page [Juan go to home [Juan clicks on home button]]]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Add a single product to the cart
+----------------------------------------------------------------------------
+Starting ChromeDriver 125.0.6422.78 (14db42ec38aded3304a3e624a0a038e02956b87e-refs/branch-heads/6422@{#1088}) on port 41156
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1721510982.498][WARNING]: This version of ChromeDriver has not been tested with Chrome version 126.
+jul. 20, 2024 4:29:42 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@9ee9a
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4fc73d6f
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@797dea0f
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5fa7d7e4
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6eade0dd
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4b0e79c9
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@69b15ee4
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7b1438f2
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6330bdb5
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@20095410
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]], And enter the password &quot;123&quot; [Juan fill password [Juan enters '123' into Password field]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]], And enter the password &quot;123&quot; [Juan fill password [Juan enters '123' into Password field]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]], And enter the password &quot;123&quot; [Juan fill password [Juan enters '123' into Password field]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@19156a02
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@701e0925
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3792edaa
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]], And enter the password &quot;123&quot; [Juan fill password [Juan enters '123' into Password field]], And submit the registration form [Juan submit registration form [Juan clicks on Submit button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]], And enter the password &quot;123&quot; [Juan fill password [Juan enters '123' into Password field]], And submit the registration form [Juan submit registration form [Juan clicks on Submit button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]], And enter the password &quot;123&quot; [Juan fill password [Juan enters '123' into Password field]], And submit the registration form [Juan submit registration form [Juan clicks on Submit button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2826ad3
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1d0d5ae1
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]], And enter the password &quot;123&quot; [Juan fill password [Juan enters '123' into Password field]], And submit the registration form [Juan submit registration form [Juan clicks on Submit button]], Then should see a confirmation message &quot;Sign up successful.&quot; [Juan verify alert]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]], Then go to home page [Juan go to home [Juan clicks on home button]], Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]], And enter the password &quot;123&quot; [Juan fill password [Juan enters '123' into Password field]], And submit the registration form [Juan submit registration form [Juan clicks on Submit button]], Then should see a confirmation message &quot;Sign up successful.&quot; [Juan verify alert]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]], Then go to home page [Juan go to home [Juan clicks on home button]], Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]], And enter the password &quot;123&quot; [Juan fill password [Juan enters '123' into Password field]], And submit the registration form [Juan submit registration form [Juan clicks on Submit button]], Then should see a confirmation message &quot;Sign up successful.&quot; [Juan verify alert]]
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: Create a new user account
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Juan verify alert
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected alert message: Sign up successful. but got: This user already exist.
+Starting ChromeDriver 125.0.6422.78 (14db42ec38aded3304a3e624a0a038e02956b87e-refs/branch-heads/6422@{#1088}) on port 46273
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1721510991.881][WARNING]: This version of ChromeDriver has not been tested with Chrome version 126.
+jul. 20, 2024 4:29:51 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@f0bdf8e
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7019a465
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5c5cf0fa
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User login:Given enter the page [Juan open up [Juan opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User login:Given enter the page [Juan open up [Juan opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User login:Given enter the page [Juan open up [Juan opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6725e758
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@78e1b5e4
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4a6b9fae
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User login:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1519b2de
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User login:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2a4c8330
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User login:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3b4d56a9
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User login:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User login:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User login:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7c6d6bd5
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User login:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], Then validate login with message &quot;Welcome&quot;
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: User login:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], Then validate login with message &quot;Welcome&quot;
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]], Then go to home page [Juan go to home [Juan clicks on home button]], Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]], And enter the password &quot;123&quot; [Juan fill password [Juan enters '123' into Password field]], And submit the registration form [Juan submit registration form [Juan clicks on Submit button]], Then should see a confirmation message &quot;Sign up successful.&quot; [Juan verify alert], User login:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], Then validate login with message &quot;Welcome&quot;]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]], Then go to home page [Juan go to home [Juan clicks on home button]], Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]], And enter the password &quot;123&quot; [Juan fill password [Juan enters '123' into Password field]], And submit the registration form [Juan submit registration form [Juan clicks on Submit button]], Then should see a confirmation message &quot;Sign up successful.&quot; [Juan verify alert], User login:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], Then validate login with message &quot;Welcome&quot;]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: User login
+----------------------------------------------------------------------------
+Starting ChromeDriver 125.0.6422.78 (14db42ec38aded3304a3e624a0a038e02956b87e-refs/branch-heads/6422@{#1088}) on port 43441
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1721511001.235][WARNING]: This version of ChromeDriver has not been tested with Chrome version 126.
+jul. 20, 2024 4:30:01 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@19932f4e
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@29427d3c
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1f145417
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User Log out:Given enter the page [Juan open up [Juan opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User Log out:Given enter the page [Juan open up [Juan opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User Log out:Given enter the page [Juan open up [Juan opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6a0e74f5
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4c26fb19
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6467ba22
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User Log out:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@20b4bfc3
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User Log out:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@56f22b6b
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User Log out:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3a1be99e
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User Log out:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User Log out:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User Log out:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@32700511
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2094530d
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6fd1fce1
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User Log out:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], When perform logout [Juan log out [Juan clicks on button to logout]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User Log out:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], When perform logout [Juan log out [Juan clicks on button to logout]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User Log out:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], When perform logout [Juan log out [Juan clicks on button to logout]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4ab1dbc9
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4d972b66
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User Log out:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], When perform logout [Juan log out [Juan clicks on button to logout]], Then validate logout [Then the login button is visible]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:User Log out:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], When perform logout [Juan log out [Juan clicks on button to logout]], Then validate logout [Then the login button is visible]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: User Log out:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], When perform logout [Juan log out [Juan clicks on button to logout]], Then validate logout [Then the login button is visible]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]], Then go to home page [Juan go to home [Juan clicks on home button]], Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]], And enter the password &quot;123&quot; [Juan fill password [Juan enters '123' into Password field]], And submit the registration form [Juan submit registration form [Juan clicks on Submit button]], Then should see a confirmation message &quot;Sign up successful.&quot; [Juan verify alert], User login:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], Then validate login with message &quot;Welcome&quot;, User Log out:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], When perform logout [Juan log out [Juan clicks on button to logout]], Then validate logout [Then the login button is visible]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]], Then go to home page [Juan go to home [Juan clicks on home button]], Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]], And enter the password &quot;123&quot; [Juan fill password [Juan enters '123' into Password field]], And submit the registration form [Juan submit registration form [Juan clicks on Submit button]], Then should see a confirmation message &quot;Sign up successful.&quot; [Juan verify alert], User login:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], Then validate login with message &quot;Welcome&quot;, User Log out:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], When perform logout [Juan log out [Juan clicks on button to logout]], Then validate logout [Then the login button is visible]]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: User Log out
+----------------------------------------------------------------------------
+Starting ChromeDriver 125.0.6422.78 (14db42ec38aded3304a3e624a0a038e02956b87e-refs/branch-heads/6422@{#1088}) on port 15438
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1721511011.384][WARNING]: This version of ChromeDriver has not been tested with Chrome version 126.
+jul. 20, 2024 4:30:11 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@617446bc
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3d12e651
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1626ac04
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Fill out the contact form and handle alert:Given enter the page [Juan open up [Juan opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Fill out the contact form and handle alert:Given enter the page [Juan open up [Juan opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Fill out the contact form and handle alert:Given enter the page [Juan open up [Juan opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@322785c3
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@45ad292a
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@448177d3
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Fill out the contact form and handle alert:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the contact page [Juan submit contact form [Juan clicks on Contact button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Fill out the contact form and handle alert:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the contact page [Juan submit contact form [Juan clicks on Contact button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Fill out the contact form and handle alert:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the contact page [Juan submit contact form [Juan clicks on Contact button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@10610cb
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7823f8a
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@79fa8144
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Fill out the contact form and handle alert:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the contact page [Juan submit contact form [Juan clicks on Contact button]], Then fill out the contact form with email &quot;test@pragma.com&quot;, name &quot;Juan Carvajal&quot;, and message &quot;This is a test message&quot; [Juan fill contact form [Juan enters 'test@pragma.com' into Email field]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@33ae57bb
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Fill out the contact form and handle alert:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the contact page [Juan submit contact form [Juan clicks on Contact button]], Then fill out the contact form with email &quot;test@pragma.com&quot;, name &quot;Juan Carvajal&quot;, and message &quot;This is a test message&quot; [Juan fill contact form [Juan enters 'test@pragma.com' into Email field, Juan enters 'Juan Carvajal' into Name field]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3e508c51
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Fill out the contact form and handle alert:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the contact page [Juan submit contact form [Juan clicks on Contact button]], Then fill out the contact form with email &quot;test@pragma.com&quot;, name &quot;Juan Carvajal&quot;, and message &quot;This is a test message&quot; [Juan fill contact form [Juan enters 'test@pragma.com' into Email field, Juan enters 'Juan Carvajal' into Name field, Juan enters 'This is a test message' into Message field]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2efac6c0
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Fill out the contact form and handle alert:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the contact page [Juan submit contact form [Juan clicks on Contact button]], Then fill out the contact form with email &quot;test@pragma.com&quot;, name &quot;Juan Carvajal&quot;, and message &quot;This is a test message&quot; [Juan fill contact form [Juan enters 'test@pragma.com' into Email field, Juan enters 'Juan Carvajal' into Name field, Juan enters 'This is a test message' into Message field, Juan clicks on Send message button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Fill out the contact form and handle alert:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the contact page [Juan submit contact form [Juan clicks on Contact button]], Then fill out the contact form with email &quot;test@pragma.com&quot;, name &quot;Juan Carvajal&quot;, and message &quot;This is a test message&quot; [Juan fill contact form [Juan enters 'test@pragma.com' into Email field, Juan enters 'Juan Carvajal' into Name field, Juan enters 'This is a test message' into Message field, Juan clicks on Send message button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Fill out the contact form and handle alert:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the contact page [Juan submit contact form [Juan clicks on Contact button]], Then fill out the contact form with email &quot;test@pragma.com&quot;, name &quot;Juan Carvajal&quot;, and message &quot;This is a test message&quot; [Juan fill contact form [Juan enters 'test@pragma.com' into Email field, Juan enters 'Juan Carvajal' into Name field, Juan enters 'This is a test message' into Message field, Juan clicks on Send message button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Fill out the contact form and handle alert:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the contact page [Juan submit contact form [Juan clicks on Contact button]], Then fill out the contact form with email &quot;test@pragma.com&quot;, name &quot;Juan Carvajal&quot;, and message &quot;This is a test message&quot; [Juan fill contact form [Juan enters 'test@pragma.com' into Email field, Juan enters 'Juan Carvajal' into Name field, Juan enters 'This is a test message' into Message field, Juan clicks on Send message button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]], Then go to home page [Juan go to home [Juan clicks on home button]], Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]], And enter the password &quot;123&quot; [Juan fill password [Juan enters '123' into Password field]], And submit the registration form [Juan submit registration form [Juan clicks on Submit button]], Then should see a confirmation message &quot;Sign up successful.&quot; [Juan verify alert], User login:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], Then validate login with message &quot;Welcome&quot;, User Log out:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], When perform logout [Juan log out [Juan clicks on button to logout]], Then validate logout [Then the login button is visible], Fill out the contact form and handle alert:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the contact page [Juan submit contact form [Juan clicks on Contact button]], Then fill out the contact form with email &quot;test@pragma.com&quot;, name &quot;Juan Carvajal&quot;, and message &quot;This is a test message&quot; [Juan fill contact form [Juan enters 'test@pragma.com' into Email field, Juan enters 'Juan Carvajal' into Name field, Juan enters 'This is a test message' into Message field, Juan clicks on Send message button]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]], Then go to home page [Juan go to home [Juan clicks on home button]], Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]], And enter the password &quot;123&quot; [Juan fill password [Juan enters '123' into Password field]], And submit the registration form [Juan submit registration form [Juan clicks on Submit button]], Then should see a confirmation message &quot;Sign up successful.&quot; [Juan verify alert], User login:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], Then validate login with message &quot;Welcome&quot;, User Log out:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], When perform logout [Juan log out [Juan clicks on button to logout]], Then validate logout [Then the login button is visible], Fill out the contact form and handle alert:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the contact page [Juan submit contact form [Juan clicks on Contact button]], Then fill out the contact form with email &quot;test@pragma.com&quot;, name &quot;Juan Carvajal&quot;, and message &quot;This is a test message&quot; [Juan fill contact form [Juan enters 'test@pragma.com' into Email field, Juan enters 'Juan Carvajal' into Name field, Juan enters 'This is a test message' into Message field, Juan clicks on Send message button]]]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Fill out the contact form and handle alert
+----------------------------------------------------------------------------
+Starting ChromeDriver 125.0.6422.78 (14db42ec38aded3304a3e624a0a038e02956b87e-refs/branch-heads/6422@{#1088}) on port 42792
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1721511020.523][WARNING]: This version of ChromeDriver has not been tested with Chrome version 126.
+jul. 20, 2024 4:30:20 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7e561621
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@e40e2dd
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@733ee9a2
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a monitor to the cart:Given enter the page [Juan open up [Juan opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a monitor to the cart:Given enter the page [Juan open up [Juan opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a monitor to the cart:Given enter the page [Juan open up [Juan opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@56b34afb
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@30f8e04a
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@37b7c8d0
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a monitor to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the monitors [Juan monitors [Juan clicks on home button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a monitor to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the monitors [Juan monitors [Juan clicks on home button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a monitor to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the monitors [Juan monitors [Juan clicks on home button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@82a8c64
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@23d4cda6
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@55459961
+[Test worker] WARN net.serenitybdd.screenplay.targets.EnsureFieldVisible - Failed to move to target
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()='Apple monitor 24']&quot;}
+  (Session info: chrome=126.0.6478.182)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GG169Q2', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.182, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\USUARIO\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:30155}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 70895c73b6abdba6a6048cd56c3619cc
+*** Element info: {Using=xpath, value=//a[text()='Apple monitor 24']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getWrappedElement(WebElementFacadeImpl.java:1363)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade.executeScript(JavascriptExecutorFacade.java:70)
+	at net.serenitybdd.core.pages.PageObject.evaluateJavascript(PageObject.java:1177)
+	at net.serenitybdd.screenplay.actions.ScrollTo.performScrollTo(ScrollTo.java:23)
+	at net.serenitybdd.screenplay.actions.ScrollToWebElement.performAs(ScrollToWebElement.java:14)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:198)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:169)
+	at net.serenitybdd.screenplay.targets.EnsureFieldVisible.canSee(EnsureFieldVisible.java:26)
+	at net.serenitybdd.screenplay.actions.ByAction.resolveFor(ByAction.java:27)
+	at net.serenitybdd.screenplay.actions.ClickOnBy$ByteBuddy$mMR2z9yQ.resolveFor$accessor$Yc6FyzGW(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:377)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at net.serenitybdd.screenplay.actions.ClickOnBy$ByteBuddy$mMR2z9yQ.resolveFor(Unknown Source)
+	at net.serenitybdd.screenplay.actions.ClickOnBy.performAs(ClickOnBy.java:13)
+	at net.serenitybdd.screenplay.actions.ClickOnBy$ByteBuddy$mMR2z9yQ.performAs$accessor$Yc6FyzGW(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at net.serenitybdd.screenplay.actions.ClickOnBy$ByteBuddy$mMR2z9yQ.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at co.com.pragma.certification.utest.tasks.selectProduct.performAs(selectProduct.java:32)
+	at co.com.pragma.certification.utest.tasks.selectProduct$ByteBuddy$hqf98OU3.performAs$accessor$OYLl5QYz(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at co.com.pragma.certification.utest.tasks.selectProduct$ByteBuddy$hqf98OU3.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at co.com.pragma.certification.utest.stepdefinitions.UtestStepDefinitions.selectsProduct(UtestStepDefinitions.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a monitor to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the monitors [Juan monitors [Juan clicks on home button]], When selects &quot;Apple monitor 24&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Apple monitor 24']]]]
+Error occurred: Expected condition failed: waiting for element to be clickable: By.xpath: //a[text()='Add to cart'] (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[text()='Add to cart'] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at co.com.pragma.certification.utest.tasks.selectProduct.performAs(selectProduct.java:38)
+	at co.com.pragma.certification.utest.tasks.selectProduct$ByteBuddy$hqf98OU3.performAs$accessor$OYLl5QYz(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at co.com.pragma.certification.utest.tasks.selectProduct$ByteBuddy$hqf98OU3.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at co.com.pragma.certification.utest.stepdefinitions.UtestStepDefinitions.selectsProduct(UtestStepDefinitions.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()='Add to cart']&quot;}
+  (Session info: chrome=126.0.6478.182)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GG169Q2', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.182, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\USUARIO\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:30155}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 70895c73b6abdba6a6048cd56c3619cc
+*** Element info: {Using=xpath, value=//a[text()='Add to cart']}
+	at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 79 more
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a monitor to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the monitors [Juan monitors [Juan clicks on home button]], When selects &quot;Apple monitor 24&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Apple monitor 24']]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a monitor to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the monitors [Juan monitors [Juan clicks on home button]], When selects &quot;Apple monitor 24&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Apple monitor 24']]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@51ff8db
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Add a monitor to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the monitors [Juan monitors [Juan clicks on home button]], When selects &quot;Apple monitor 24&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Apple monitor 24']]]], Then go to home page [Juan go to home]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Add a monitor to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the monitors [Juan monitors [Juan clicks on home button]], When selects &quot;Apple monitor 24&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Apple monitor 24']]]], Then go to home page [Juan go to home]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]], Then go to home page [Juan go to home [Juan clicks on home button]], Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]], And enter the password &quot;123&quot; [Juan fill password [Juan enters '123' into Password field]], And submit the registration form [Juan submit registration form [Juan clicks on Submit button]], Then should see a confirmation message &quot;Sign up successful.&quot; [Juan verify alert], User login:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], Then validate login with message &quot;Welcome&quot;, User Log out:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], When perform logout [Juan log out [Juan clicks on button to logout]], Then validate logout [Then the login button is visible], Fill out the contact form and handle alert:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the contact page [Juan submit contact form [Juan clicks on Contact button]], Then fill out the contact form with email &quot;test@pragma.com&quot;, name &quot;Juan Carvajal&quot;, and message &quot;This is a test message&quot; [Juan fill contact form [Juan enters 'test@pragma.com' into Email field, Juan enters 'Juan Carvajal' into Name field, Juan enters 'This is a test message' into Message field, Juan clicks on Send message button]], Add a monitor to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the monitors [Juan monitors [Juan clicks on home button]], When selects &quot;Apple monitor 24&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Apple monitor 24']]]], Then go to home page [Juan go to home]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Add a single product to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], When selects &quot;Samsung galaxy s6&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Samsung galaxy s6']], Juan clicks on [By.xpath: //a[text()='Add to cart']]]], Then go to home page [Juan go to home [Juan clicks on home button]], Create a new user account:Given enter the page [Juan open up [Juan opens the Utest page]], When enter the username &quot;Juan9090&quot; [Juan fill username [Juan clicks on Username field, Juan enters 'Juan9090' into Username field]], And enter the password &quot;123&quot; [Juan fill password [Juan enters '123' into Password field]], And submit the registration form [Juan submit registration form [Juan clicks on Submit button]], Then should see a confirmation message &quot;Sign up successful.&quot; [Juan verify alert], User login:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], Then validate login with message &quot;Welcome&quot;, User Log out:Given enter the page [Juan open up [Juan opens the Utest page]], When perform login [Juan login user [Juan clicks on button to open login modal, Juan enters 'FAS154398759487323' into username input field, Juan enters '45555555' into password input field, Juan clicks on login button]], When perform logout [Juan log out [Juan clicks on button to logout]], Then validate logout [Then the login button is visible], Fill out the contact form and handle alert:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the contact page [Juan submit contact form [Juan clicks on Contact button]], Then fill out the contact form with email &quot;test@pragma.com&quot;, name &quot;Juan Carvajal&quot;, and message &quot;This is a test message&quot; [Juan fill contact form [Juan enters 'test@pragma.com' into Email field, Juan enters 'Juan Carvajal' into Name field, Juan enters 'This is a test message' into Message field, Juan clicks on Send message button]], Add a monitor to the cart:Given enter the page [Juan open up [Juan opens the Utest page]], Given go the monitors [Juan monitors [Juan clicks on home button]], When selects &quot;Apple monitor 24&quot; [Juan select product [Juan clicks on [By.xpath: //a[text()='Apple monitor 24']]]], Then go to home page [Juan go to home]]
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: Add a monitor to the cart
+---------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Juan clicks on [By.xpath: //a[text()='Apple monitor 24']]
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()='Apple monitor 24']&quot;}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 20/07/2024, 4:30:39 p. m.</p>
+</div>
+</div>
+</body>
+</html>

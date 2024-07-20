@@ -1,0 +1,9 @@
+
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ì”âü8Ê„ı†2
+O
+java:S1905"2Remove this unnecessary cast to "RemoteWebDriver".(Ğ©ü‡8 †ø†2
+L	java:S106#"+Replace this use of System.out by a logger.(³ÂÅòûÿÿÿÿ8¢†ø†2
+L	java:S106'"+Replace this use of System.out by a logger.(ŞÒ—üÿÿÿÿ8£†ø†2
+L	java:S106,"+Replace this use of System.out by a logger.(«„®¯úÿÿÿÿ8£†ø†2
+G	java:S1061"+Replace this use of System.out by a logger.(¥¡èœ8£†ø†2
+G	java:S1064"+Replace this use of System.err by a logger.(š²áœ8¤†ø†2

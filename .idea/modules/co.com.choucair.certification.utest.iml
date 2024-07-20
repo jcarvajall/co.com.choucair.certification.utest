@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="co.com.choucair.certification.utest" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" type="JAVA_MODULE" version="4" />
+<module version="4">
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="e7c89e37-25de-4882-9315-58334660db36" />
+  </component>
+</module>

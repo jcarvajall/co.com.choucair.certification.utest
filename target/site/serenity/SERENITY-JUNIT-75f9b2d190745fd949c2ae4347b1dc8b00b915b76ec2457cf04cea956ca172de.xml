@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="utest" skipped="0" tests="1" time="2.56" timestamp="2023-04-25 05:27:29"><testcase name="search for automation on the utest page"><error message="Could not instantiate class org.openqa.selenium.chrome.ChromeDriver" type="net.thucydides.core.webdriver.DriverConfigurationError">Could not instantiate class org.openqa.selenium.chrome.ChromeDriver</error><system-err>Could not instantiate class org.openqa.selenium.chrome.ChromeDriver&#13;
-co.com.choucair.certification.utest.tasks.OpenUp.performAs(OpenUp.java:21)&#13;
-co.com.choucair.certification.utest.stepdefinitions.UtestStepDefinitions.JuanSeeksToRegisterOnTheUtestWebSite(UtestStepDefinitions.java:25)&#13;
-cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
-</system-err></testcase></testsuite>

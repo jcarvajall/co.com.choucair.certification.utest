@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="a9ab1c48b0d81ecd3ec2b2bac53ff4608254ea1c75d6995a9dd5fe99cc5be7f0.html">Add To Cart Functionality</a></span>
+                > <span class="truncate-60"><a
+                    href="1b4871a28e54f734247a4521bc8ee2c6d2be456024d4a72796f18eb45f1c7d8a.html">User Log out </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-07-2024 16:30</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Add To Cart Functionality </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user<br />
+I want to be able to add products to the cart<br />
+So that I can purchase them later
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="c2600cb8e2e0f9d8c915f683540744567babfe3974af1df4afbc9f199421589f.html">Scenario4
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="7953758595bde7017c95c79b60f8cd95527eb5647529cbc8d35d3da7c91ea318.html">Scenarios
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">User Log out
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="026f173daae99e80d9b75ffe4b6a0df59d738e7fc239c068033782054bb3ed5b.png" title=" Given enter the page" width="1920"/>
+                <img src="026f173daae99e80d9b75ffe4b6a0df59d738e7fc239c068033782054bb3ed5b.png" title=" Juan open up" width="1920"/>
+                <img src="026f173daae99e80d9b75ffe4b6a0df59d738e7fc239c068033782054bb3ed5b.png" title=" Juan opens the Utest page" width="1920"/>
+                <img src="a3b115e67132daac7f387f053ca240c1a27d60782eb9889c90c9eed01b2c8283.png" title=" Juan open up (completed)" width="1920"/>
+                <img src="a3b115e67132daac7f387f053ca240c1a27d60782eb9889c90c9eed01b2c8283.png" title=" Given enter the page (completed)" width="1920"/>
+                <img src="30b098e0b05e995b60237564c35a0483a090c7ab34b2683439badde614801515.png" title=" When perform login" width="1920"/>
+                <img src="30b098e0b05e995b60237564c35a0483a090c7ab34b2683439badde614801515.png" title=" Juan login user" width="1920"/>
+                <img src="30b098e0b05e995b60237564c35a0483a090c7ab34b2683439badde614801515.png" title=" Juan clicks on button to open login modal" width="1920"/>
+                <img src="97218842e221be30f22a439009c12f5e5d4039f20cf87f3fdbd2acf731f9c7e7.png" title=" Juan enters 'FAS154398759487323' into username input field" width="1920"/>
+                <img src="c2ede2465ddceafd8b101a4f94a8161c42fbecef60068d7a1be7c3a027be643c.png" title=" Juan enters '45555555' into password input field" width="1920"/>
+                <img src="22d2486ed12d5e0895959761604dcc72b4d4420f357739eba9f5ed6a6985bec2.png" title=" Juan clicks on login button" width="1920"/>
+                <img src="22d2486ed12d5e0895959761604dcc72b4d4420f357739eba9f5ed6a6985bec2.png" title=" Juan login user (completed)" width="1920"/>
+                <img src="22d2486ed12d5e0895959761604dcc72b4d4420f357739eba9f5ed6a6985bec2.png" title=" When perform login (completed)" width="1920"/>
+                <img src="026f173daae99e80d9b75ffe4b6a0df59d738e7fc239c068033782054bb3ed5b.png" title=" When perform logout" width="1920"/>
+                <img src="026f173daae99e80d9b75ffe4b6a0df59d738e7fc239c068033782054bb3ed5b.png" title=" Juan log out" width="1920"/>
+                <img src="026f173daae99e80d9b75ffe4b6a0df59d738e7fc239c068033782054bb3ed5b.png" title=" Juan clicks on button to logout" width="1920"/>
+                <img src="026f173daae99e80d9b75ffe4b6a0df59d738e7fc239c068033782054bb3ed5b.png" title=" Juan log out (completed)" width="1920"/>
+                <img src="026f173daae99e80d9b75ffe4b6a0df59d738e7fc239c068033782054bb3ed5b.png" title=" When perform logout (completed)" width="1920"/>
+                <img src="a3b115e67132daac7f387f053ca240c1a27d60782eb9889c90c9eed01b2c8283.png" title=" Then validate logout" width="1920"/>
+                <img src="a3b115e67132daac7f387f053ca240c1a27d60782eb9889c90c9eed01b2c8283.png" title=" Then the login button is visible" width="1920"/>
+                <img src="a3b115e67132daac7f387f053ca240c1a27d60782eb9889c90c9eed01b2c8283.png" title=" Then validate logout (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>
